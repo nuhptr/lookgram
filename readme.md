@@ -1,12 +1,21 @@
 # Lookgram
 
-## Dependencies
+## General Dependencies
+
+-  [@types/node] - pnpm i -D @types/node
+-  [react-router-dom](https://reactrouter.com/en/6.22.1) - pnpm install react-router-dom
+
+## Shadcn Dependencies
 
 -  [tailwindcss](https://tailwindcss.com/) - pnpm install -D tailwindcss
 -  [postcss](https://postcss.org/) - pnpm install -D postcss
 -  [autoprefixer](https://www.npmjs.com/package/autoprefixer) - pnpm install -D autoprefixer
--  [@types/node] - pnpm i -D @types/node
--  [react-router-dom](https://reactrouter.com/en/6.22.1) - pnpm install react-router-dom
+-  [tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate) - pnpm install tailwindcss-animate
+-  [tailwind-merge](https://www.npmjs.com/package/tailwind-merge) - pnpm install tailwind-merge
+-  [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot) - pnpm install @radix-ui/react-slot
+-  [class-variance-authority](https://cva.style/docs) - pnpm install class-variance-authority
+-  [clsx](https://www.npmjs.com/package/clsx) - pnpm install clsx
+-  [lucide-react](https://www.npmjs.com/package/lucide-react) - pnpm install lucide-react
 
 ## Eslint
 
