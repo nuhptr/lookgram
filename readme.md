@@ -12,10 +12,14 @@
 -  [autoprefixer](https://www.npmjs.com/package/autoprefixer) - pnpm install -D autoprefixer
 -  [tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate) - pnpm install tailwindcss-animate
 -  [tailwind-merge](https://www.npmjs.com/package/tailwind-merge) - pnpm install tailwind-merge
--  [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot) - pnpm install @radix-ui/react-slot
 -  [class-variance-authority](https://cva.style/docs) - pnpm install class-variance-authority
 -  [clsx](https://www.npmjs.com/package/clsx) - pnpm install clsx
 -  [lucide-react](https://www.npmjs.com/package/lucide-react) - pnpm install lucide-react
+-  [react-hook-form](https://www.npmjs.com/package/react-hook-form) - pnpm install react-hook-form
+-  [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers) - pnpm install @hookform/resolvers
+-  [zod](https://www.npmjs.com/package/zod) - pnpm install zod
+-  [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot) - pnpm install @radix-ui/react-slot
+-  [@radix-ui/react-label](https://www.npmjs.com/package/@radix-ui/react-label) - pnpm install @radix-ui/react-label
 
 ## Eslint
 
