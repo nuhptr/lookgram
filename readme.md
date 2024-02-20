@@ -4,6 +4,7 @@
 
 -  [@types/node] - pnpm i -D @types/node
 -  [react-router-dom](https://reactrouter.com/en/6.22.1) - pnpm install react-router-dom
+-  [appwrite](https://appwrite.io/) - pnpm install appwrite
 
 ## Shadcn Dependencies
 
