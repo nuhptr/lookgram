@@ -63,3 +63,8 @@ export default defineConfig({
    },
 })
 ```
+
+-  Make the appwrite collection setting in role to any(create, read, update, delete)
+-  Make relationship between user and post collection
+-  Complete other attribute
+-  Make the indexes for caption fullText for search
