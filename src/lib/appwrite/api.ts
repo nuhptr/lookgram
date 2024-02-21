@@ -390,7 +390,6 @@ export async function getRecentPosts() {
 // ============================================================
 // USER
 // ============================================================
-
 //* GET USERS
 export async function getUsers(limit?: number) {
    const queries = [Query.orderDesc("$createdAt")]
