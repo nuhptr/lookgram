@@ -5,6 +5,7 @@
 -  [@types/node] - pnpm i -D @types/node
 -  [react-router-dom](https://reactrouter.com/en/6.22.1) - pnpm install react-router-dom
 -  [appwrite](https://appwrite.io/) - pnpm install appwrite
+-  [@tanstack/react-query](https://react-query.tanstack.com/) - pnpm install @tanstack/react-query
 
 ## Shadcn Dependencies
 
@@ -21,6 +22,7 @@
 -  [zod](https://www.npmjs.com/package/zod) - pnpm install zod
 -  [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot) - pnpm install @radix-ui/react-slot
 -  [@radix-ui/react-label](https://www.npmjs.com/package/@radix-ui/react-label) - pnpm install @radix-ui/react-label
+-  [@radix-ui/react-toast](https://www.npmjs.com/package/@radix-ui/react-toast) - pnpm install @radix-ui/react-toast
 
 ## Eslint
 
