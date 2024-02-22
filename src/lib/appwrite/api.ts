@@ -73,6 +73,28 @@ export async function getAccount() {
    }
 }
 
+//* GET CURRENT USER
+export async function getCurrentUser() {
+   try {
+      const currentAccount = await getAccount()
+
+      if (!currentAccount) throw new Error("Account not found")
+
+      const currentUser = await database.listDocuments(
+         appwriteConfig.databaseId,
+         appwriteConfig.userCollectionId,
+         [Query.equal("accountId", currentAccount.$id)]
+      )
+
+      if (!currentUser) throw new Error("User not found")
+
+      return currentUser.documents[0]
+   } catch (error) {
+      console.log(error)
+      return null
+   }
+}
+
 //* SIGN OUT
 export async function signOutAccount() {
    try {
