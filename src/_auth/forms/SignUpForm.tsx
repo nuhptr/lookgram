@@ -6,13 +6,18 @@ import { Link } from "react-router-dom"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { useToast } from "@/components/ui/use-toast"
 import Loader from "@/components/shared/Loader"
 
 import { SignupValidation } from "@/lib/validation"
-import { createUserAccount } from "@/lib/appwrite/api"
+import { useCreateUserAccountMutation, useSignInAccount } from "@/lib/react-query/queriesAndMutations"
 
 export default function SignUpForm() {
-   const isLoading = false
+   const { toast } = useToast()
+
+   const { mutateAsync: createUserAccount, isLoading: isCreatingUser } = useCreateUserAccountMutation()
+
+   const { mutateAsync: signInAccount, isLoading: isSigningIn } = useSignInAccount()
 
    // 1. Define your form.
    const form = useForm<z.infer<typeof SignupValidation>>({
@@ -23,8 +28,14 @@ export default function SignUpForm() {
    // 2. Define a submit handler.
    async function onSubmit(values: z.infer<typeof SignupValidation>) {
       const newUser = await createUserAccount(values)
+      if (!newUser) {
+         return toast({ title: "Sign up failed. Please try again." })
+      }
 
-      console.log(newUser)
+      const session = await signInAccount({ email: values.email, password: values.password })
+      if (!session) {
+         return toast({ title: "Sign in failed. Please try again." })
+      }
    }
 
    return (
